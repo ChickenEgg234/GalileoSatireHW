@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Galileo Times</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div id="title-wrapper">
+				<div id="date-wrapper">
+					<p></p>
+				</div>
+				<div id="title">
+					<a href="#">
+						<h1>Galileo Times</h1>
+					</a>
+				</div>
+			</div>
+			<nav id="main-nav">
+				<a href="https://www.sfchronicle.com/">S.F.</a>
+				<a href="http://galileoweb.org/">Science</a>
+				<a href="http://galileoweb.org/">Sport</a>
+				<a href="https://classroom.google.com/h">Classes</a>
+				<a href="https://www.sfusd.edu/">District</a>
+				<a href="https://sfpl.bibliocommons.com/">Books</a>
+			</nav>
+		</header>
+		<main class="container">
+			<section id="top-section">
+				<div id="main-content">
+					<div class="main-box section-box">
+						<div class="content">
+							<section>
+								<h2>
+									Unfinished Food? It is a Donation For Rats
+								</h2>
+								<p>
+									Taking a look in the compost bin the first
+									thing that catches your eye would be this
+									perfectly wasted crust. Treated like how the
+									US government treats second class citizens.
+								</p>
+							</section>
+							<section>
+								<h3>Who Are the Ones Responsible?</h3>
+								<p>
+									Who cares if we are wasting food we can
+									always just make more anyways. Composting?
+									Who even does that we only have so much
+									lunch time anyways.
+								</p>
+							</section>
+						</div>
+						<img src="trashcan2.jpeg" alt="" />
+					</div>
+					<div class="main-box section-box">
+						<img src="stair.png" alt="" />
+						<div class="content">
+							<section>
+								<h2>Food On The Stairs</h2>
+								<p>
+									There were people specifically these high
+									schoolers who believed that littering food
+									was a perfectly fine thing to do. Half-eaten
+									sandwiches, discarded fruit would be
+									carelessly thrown out with other garbage.
+								</p>
+							</section>
+							<section>
+								<h3>
+									Walking To the Trash Can Is Worse Than Mile
+									Runs
+								</h3>
+								<p>
+									Leaving unfinished food on the ground when
+									the trash can is just few steps aways. Yeah,
+									we are that lazy.
+								</p>
+							</section>
+						</div>
+					</div>
+					<div class="main-box section-box">
+						<h2><a style="color: black;" href="https://www.sfusd.edu/services/health-wellness/nutrition-school-meals/menus">You Are Right, However...</a></h2>
+						<p>
+							"We are currently facing unprecedented supply chain
+							challenges that impact manufacturing and
+							distribution of some foods and ingredients. Other
+							circumstances also arise on occasion, such as the
+							inability to staff our schools. This means we
+							sometimes need to serve a different meal than what
+							is posted on the menu with little to no notice. This
+							situation is out of our control and something that
+							school districts all across the country are
+							experiencing. We are doing our best every day to
+							come up with solutions to these challenges,
+							including working hard with our vendors to secure
+							meals as published and minimize meal substitutions
+							to our best ability."
+						</p>
+					</div>
+				</div>
+				<div id="side-content">
+					<div class="side-box section-box">
+						The school cafeteria has long been known for providing
+						students with enough food. Unfortunately, this also
+						means that much of the food goes uneaten and ends up in
+						the garbage bin.
+					</div>
+					<div class="side-box section-box">
+						Despite the transparent packaging and clear label on the
+						food. Students still only takes one bite and toss the
+						rest.
+					</div>
+					<div class="side-box section-box">
+						How come only the meats are gone in the lunches in the
+						trash. Well, like little kids, highschollers will pick
+						out food too.
+					</div>
+				</div>
+			</section>
+		</main>
+		<script>
+			const dateShow = document.querySelector("#date-wrapper p");
+			const currentDateTime = new Date();
+			const todayDate = currentDateTime.toLocaleDateString();
+			let day;
+			switch (currentDateTime.getDay()) {
+				case 1:
+					day = "Monday";
+					break;
+				case 2:
+					day = "Tuesday";
+					break;
+				case 3:
+					day = "Wednesday";
+					break;
+				case 4:
+					day = "Thursday";
+					break;
+				case 5:
+					day = "Friday";
+					break;
+				case 6:
+					day = "Saturday";
+					break;
+				case 0:
+					day = "Sunday";
+					break;
+			}
+			dateShow.textContent = `${todayDate}, ${day}`;
+		</script>
+	</body>
+</html>
